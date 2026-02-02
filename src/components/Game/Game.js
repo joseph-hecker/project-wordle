@@ -15,7 +15,7 @@ function Game({ guesses }) {
     <div className='guess-results'>
       {range(NUM_OF_GUESSES_ALLOWED).map(i => {
         const guess = guesses && guesses.length > i ? guesses[i] : undefined
-        return <Guess guess={guess} />
+        return <Guess guess={guess} answer={answer} />
       })}
     </div>
   );
