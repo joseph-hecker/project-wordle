@@ -16,7 +16,7 @@ function App() {
       <Header />
 
       <div className="game-wrapper">
-        <Game />
+        <Game guesses={guesses}/>
         <GuessList guesses={guesses} />
         <GuessInput addGuess={addGuess}/>
       </div>
